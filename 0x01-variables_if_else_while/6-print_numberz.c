@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - Prints decimal digits using only putchar
+ *main - Prints decimal digits using only putchar.
  *
  *Description: Prints decimal digits using only putchar
  *Return: 0
