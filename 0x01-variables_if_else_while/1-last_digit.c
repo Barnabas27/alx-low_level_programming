@@ -4,8 +4,6 @@
 
 /**
  * main - 1. The last digit
- *@n: variable assigned value of the random number
- *@a: second member
  * Description: assign a random number and determine the last digin
  * Return: return 0
  */
