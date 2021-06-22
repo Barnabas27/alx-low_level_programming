@@ -1,15 +1,26 @@
 #include "holberton.h"
+
 /**
- * _islower - function to check for lowercase character
- * @c:  is the int that will use for the argument of the function
- * Return: 0
+ * _isalpha - Shows 1 if the input is a
+ * letter Another cases, shows 0
+ *
+ * @c: The character in ASCII code
+ *
+ * Return: 1 for letters. 0 for the rest.
  */
 int _isalpha(int c)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		return (1);
-	}
-	else
-		return (0);
+if (c >= 97 && c <= 122)
+{
+return (1);
+}
+else if (c >= 65 && c <= 90)
+{
+return (1);
+}
+else
+{
+return (0);
+}
+_putchar('\n');
 }
