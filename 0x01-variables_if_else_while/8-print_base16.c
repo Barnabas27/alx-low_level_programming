@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - Prints hexadecimal digits using only putchar
+ *main - Prints hexadecimal digits using only putchar.
  *
  *Description: Prints hexadecimal digits using only putchar
  *Return: 0
