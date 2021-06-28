@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "holberton.h"
+#include <string.h>
+
+/**
+ *_puts(char *str) - prints a string followed by a new line
+ *
+ *@str: the string to be printed
+ *
+ *_puts: returns the value of the str
+ *
+ */
+
+void _puts(char *str)
+{
+	char str[];
+
+	strcpy(str, "I don not fear computers. I fear the lack of them
+	       - Isaac Asimov\n");
+	puts(str);
+	return (0);
+}
