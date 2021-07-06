@@ -7,6 +7,7 @@
  *
  *@dest: destination where n bytes from src are copied
  *@src: source where n bytes are being copied from
+ *@n: bytes from memory are src to memory area dest
  *
  *Return: pointer to dest
  */
