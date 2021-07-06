@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include "holberton.h"
+
+/**
+ *_strchr - locates character in a string
+ *
+ *@s: declared string
+ *@c: character to be located.
+ *
+ *Return: pointer to first occurence of character or NULL
+ */
+
+char *_strchr(char *s, char c)
+{
+
+	s = strchr(s, c);
+
+	return (s);
+}
