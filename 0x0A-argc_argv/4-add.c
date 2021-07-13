@@ -2,40 +2,39 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - prints program name
- * @argc: counts the arguments passed
- * @argv: array of pointers to pointers containing arguments passed
- * Return: int
+ *main - prints program name
+ *@argc: counts the arguments passed
+ *@argv: array of pointers to pointers containing arguments passed
+ *Return: int
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i, sum;
-	i = 0;
+int j;
+int i = 1;
+int sum = 0;
 
-	if (argc <= 1)
-	{
-		printf("0\n");
-	}
-	else if
-		((*argv[i] >= 'a' && *argv[i] <= 'z') ||
-(*argv[i] >= 'A' && *argv[i] <= 'Z'))
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else if (**argv > 0)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			sum += atoi(argv[i]);
+if (argc == 0)
+{
+printf("0\n");
+return (0);
+}
 
-			if (i == argc - 1)
-			{
-				printf("%d\n", sum);
-			}
-		}
 
-	}
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
+{
+printf("Error\n");
+return (1);
+}
+}
+sum += atoi(argv[i]);
+}
+
+printf("%d\n", sum);
+
 	return (0);
 }
