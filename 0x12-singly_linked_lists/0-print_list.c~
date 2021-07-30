@@ -1,0 +1,27 @@
+#include "lists.h"
+
+/**
+ * print_list - prints all elements of list_t list
+ * @h: linked list
+ * Return: number of nodes in linked list
+ */
+
+
+size_t print_list(const list_t *h)
+{
+	list_t *tmp = h;
+
+	while (tmp != NULL)
+	{
+		if(tmp->next == NULL)
+		{
+			printf("%d", tmp->value);
+		}
+		else
+		{
+			printf("%d, ", tmp->value);
+		}
+
+		tmp = tmp->next;
+	}
+}
